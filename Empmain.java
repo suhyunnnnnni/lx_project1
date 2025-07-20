@@ -26,6 +26,7 @@ public class Empmain {
             String menuInput = sc.nextLine();
             int menu;            
             try {
+            	
             	menu = Integer.parseInt(menuInput);
             } catch(NumberFormatException e) {
             	System.out.println("숫자를입력하세요");
