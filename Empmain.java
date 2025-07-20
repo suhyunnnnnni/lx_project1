@@ -24,8 +24,7 @@ public class Empmain {
             System.out.println("0. 종료");
             System.out.print("메뉴 선택: ");
             String menuInput = sc.nextLine();
-            int menu;      
-            
+            int menu;               
             try {                   
             	
             	menu = Integer.parseInt(menuInput);
