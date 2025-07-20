@@ -23,8 +23,14 @@ public class Empmain {
             System.out.println("8. 나라 이름으로 근무하는 직원 검색");
             System.out.println("0. 종료");
             System.out.print("메뉴 선택: ");
-            int menu = sc.nextInt();
-            sc.nextLine();
+            String menuInput = sc.nextLine();
+            int menu;
+            try {
+            	menu = Integer.parseInt(menuInput);
+            } catch(NumberFormatException e) {
+            	System.out.println("숫자를입력하세요");
+            	continue;
+            }
             switch (menu) {
             	case 1: 
             		while (true) {
